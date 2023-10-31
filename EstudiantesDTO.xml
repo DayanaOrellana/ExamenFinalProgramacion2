@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="edu.umg.EstudiantesDTO">
+        <table name="estudiantes" schema="public" catalog="postgres"/>
+        <attributes>
+            <id name="idEstudiante">
+                <column name="id_estudiante" precision="-1"/>
+            </id>
+            <basic name="nombre">
+                <column name="nombre" length="50"/>
+            </basic>
+            <basic name="apellido">
+                <column name="apellido" length="50"/>
+            </basic>
+            <basic name="email">
+                <column name="email" length="100"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
